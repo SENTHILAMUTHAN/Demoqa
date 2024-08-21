@@ -50,8 +50,9 @@ public class Demoqarunner extends DemoqaBase {
 
 @AfterClass()
 public static void aftrClass() {
-	
+	System.out.println("hi there");
 	closeBrowser();
+	
 	
 	
 }
