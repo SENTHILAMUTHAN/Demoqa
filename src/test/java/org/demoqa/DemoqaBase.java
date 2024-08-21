@@ -65,7 +65,7 @@ public class DemoqaBase {
 		TakesScreenshot s= (TakesScreenshot)driver;
 		
 		File src = s.getScreenshotAs(OutputType.FILE);
-		File des = new File("D:\\Eclipse\\Adactin\\scnshots\\" +filename+ ".png");
+		File des = new File(System.getProperty("user.dir")+"\\scnshots\\" +filename+ ".png");
 		FileUtils.copyFile(src, des);
 		
 	}
